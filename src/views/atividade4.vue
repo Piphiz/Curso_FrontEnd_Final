@@ -2,7 +2,7 @@
   <div>
     <v-row class="justify-content-center mb-3">
       <div class="row justify-content-center mb-3">
-        <button class="btn btn-danger col-12" @click="listarCursos">
+        <button class="btn btn-danger col-12" @click="listCourses">
           Listar Cursos
         </button>
       </div>
@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      funcionarios: [
+      employeers: [
         {
           nome: "Eduardo Berg",
           sexo: "M-Masculino",
@@ -67,11 +67,11 @@ export default {
     };
   },
   methods: {
-    listarCursos() {
-      this.funcionarios.forEach((funcionario) => {
-        if (funcionario.cursos.length > 0) {
-          console.log(`${funcionario.nome} fez o(s) curso(s):`);
-          funcionario.cursos.forEach((curso) => {
+    listCourses() {
+      this.employeers.forEach((employee) => {
+        if (employee.cursos.length > 0) {
+          console.log(`${employee.nome} fez o(s) curso(s):`);
+          employee.cursos.forEach((curso) => {
             console.log(
               `\t${curso.titulo} na faculdade ${curso.faculdade} no ano ${curso.ano}\n`
             );
