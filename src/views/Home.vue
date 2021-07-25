@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Bem vindo, site feito com o intuito de obtenção do certificado referente ao curso de ferias de Vuetify/FrontEnd ministrado por Paulo Reis</h1>
+    <h2 class="text-center mt-16">Desenvolvido por:</h2>
+    <v-main class="align-center">
+      <v-container class="d-flex justify-center">
+        <v-avatar size="200">
+          <v-img
+            src="@/assets/BergAsa.png"
+          ></v-img>
+        </v-avatar>
+      </v-container>
+      <h2 class="text-center">Piphiz</h2>
+    </v-main>
+    
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  data() {
+    return {
+    };
   }
-}
+};
 </script>
