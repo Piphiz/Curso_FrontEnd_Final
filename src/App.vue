@@ -11,12 +11,6 @@
       <v-toolbar-title>Vacation Course - Vuetify/FrontEnd</v-toolbar-title>
 
       <v-spacer></v-spacer>
-      Piphiz
-      <v-avatar size="35" class="ml-1">
-        <v-img
-            src="@/assets/BergAsa.png"
-          ></v-img>
-      </v-avatar>
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
@@ -47,6 +41,17 @@
         <router-view />
       </v-container>
     </v-main>
+    <v-footer padless class="white">
+      <v-col class="text-center" cols="12">
+        <p class="grey--text text--darken-1">
+          Projeto de conclusao do curso de ferias: Javascript e VueJS
+        </p>
+        <p class="grey--text text--darken-1 mt-n4">
+          Desenvolvido por
+          <strong class="red--text text--darken-1">Eduardo Berg</strong>
+        </p>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
